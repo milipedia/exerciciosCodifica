@@ -15,6 +15,7 @@ for (let item in inventario) {
     console.log(`${item}: ${inventario[item]}`);
 }
 
+const prompt = require("prompt-sync")();
 let itemUsado = prompt("Qual item deseja usar?");
 
 if (inventario[itemUsado] > 0) {
